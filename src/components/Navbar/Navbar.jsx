@@ -66,7 +66,7 @@ export const Navbar = () => {
       <div
         style={{
           height: "100%",
-          width: "100%",
+          flexGrow: 2,
           backgroundColor: "white",
           zIndex: "1000",
         }}
@@ -89,19 +89,6 @@ export const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/members"
-            className={` ${
-              selectedNavLink === "members" ? "navbar-chosen" : ""
-            }`}
-            onClick={() => setSelectedNavLink("members")}
-          >
-            {selectedNavLink === "members" ? <LogoNavlink1 /> : ""}
-            Members
-            {selectedNavLink === "members" ? <LogoNavlink2 /> : ""}
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to="/contact-us"
             className={`${
               selectedNavLink === "contact-us" ? "navbar-chosen" : ""
@@ -117,7 +104,7 @@ export const Navbar = () => {
       <div
         style={{
           height: "100%",
-          width: "100%",
+          flexGrow: 1,
           backgroundColor: "white",
           zIndex: "1000",
         }}
