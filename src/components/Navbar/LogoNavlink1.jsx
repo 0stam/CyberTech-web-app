@@ -21,7 +21,7 @@ export const LogoNavlink1 = () => {
       >
         <defs />
         <path
-          fill="#000000"
+          fill={getFillColor("#ffffff", "#000000")}
           d="M 7.62294,41.87141 V 13.48744 L 19.11038,2 h 30.14496 v 8.86621 h -10.3682 z"
           id="path1091"
         />

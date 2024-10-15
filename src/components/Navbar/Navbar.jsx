@@ -44,7 +44,7 @@ export const Navbar = () => {
   // - porównywanie stringów z nazwami stron do useState zmiana po kliknięciu
   //NavLink - przenosi do ustawionego patha po kliknięciu jak button - path definiujemy w App.jsx
   return (
-    <nav>
+    <nav className={`nav-${theme}`}>
       <div className={`scroll-watcher-${theme} scroll-watcher`}></div>
       <NavLink className="cybertech-title" to="/" onClick={() => setSelectedNavLink("home")}>
         <LogoTextNavbar />
@@ -67,7 +67,6 @@ export const Navbar = () => {
         style={{
           height: "100%",
           flexGrow: 2,
-          backgroundColor: "white",
           zIndex: "1000",
         }}
       ></div>
@@ -105,7 +104,6 @@ export const Navbar = () => {
         style={{
           height: "100%",
           flexGrow: 1,
-          backgroundColor: "white",
           zIndex: "1000",
         }}
       ></div>
