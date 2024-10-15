@@ -4,6 +4,8 @@
 // color - 0 to zwykły normalny kolor, 1 - to ramka koloru theme, czyli zielona lub pom, jest to po to by
 // podreślić ważnego członka
 import image1 from "./600x400.png";
+import placeholderAvatar from "./placeholder_3_2.png"
+
 const MembersJSON = {
   members: [
     {
@@ -12,7 +14,7 @@ const MembersJSON = {
       role: "Prezes",
       describtion: "",
       projects: [""],
-      image: image1,
+      image: placeholderAvatar,
       color: 1,
     },
     {
