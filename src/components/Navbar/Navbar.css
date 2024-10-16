@@ -18,6 +18,10 @@ nav, nav * {
   -ms-user-select: none; /* For older versions of Internet Explorer/Edge */
 }
 
+.nav-orange {
+    background-color: white;
+}
+
 .nav-green {
     background-color: black;
 }
@@ -82,7 +86,6 @@ nav, nav * {
   height: 100%;
   width: 300px;
   min-width: 200px;
-  mix-blend-mode: screen;
 }
 
 nav ul {
@@ -107,7 +110,6 @@ nav ul li a {
   
   
   font-size: 20px;
-  mix-blend-mode: screen;
   transition: color 0.4s ease;
 }
 
