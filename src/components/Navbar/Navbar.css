@@ -2,13 +2,9 @@
 nav {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 66px;
   width: 100%;
   z-index: 1000;
-  transition: bacground-color 0.5s ease;
 }
 
 nav, nav * {
@@ -26,8 +22,25 @@ nav, nav * {
     background-color: black;
 }
 
+.nav-background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+.nav-background-orange {
+    background-color: white;
+}
+
+.nav-background-green {
+    background-color: black;
+}
+
 .scroll-watcher{
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   top: 0;
   height: 76px;
@@ -115,12 +128,10 @@ nav ul li a {
 
 .nav-orange ul li a {
     color: black;
-    background-color: white;
 }
 
 .nav-green ul li a {
     color: white;
-    background-color: black;
 }
 
 
