@@ -88,20 +88,20 @@ export const Navbar = () => {
         </NavLink>
         </li>
         <li>
-        <NavLink
-        to="/contact-us"
-        className={`${
-            selectedNavLink === "contact-us" ? "navbar-chosen" : ""
-        }`}
-        onClick={() => setSelectedNavLink("contact-us")}
-        >
-        {selectedNavLink === "contact-us" ? <LogoNavlink1 /> : ""}
-        Contact us
-        {selectedNavLink === "contact-us" ? <LogoNavlink2 /> : ""}
-        </NavLink>
+          <NavLink
+            to="/contact-us"
+            className={`${
+              selectedNavLink === "contact-us" ? "navbar-chosen" : ""
+            }`}
+            onClick={() => setSelectedNavLink("contact-us")}
+          >
+            {selectedNavLink === "contact-us" ? <LogoNavlink1 /> : ""}
+            Contact us
+            {selectedNavLink === "contact-us" ? <LogoNavlink2 /> : ""}
+          </NavLink>
         </li>
-        </ul>
-        <div
+      </ul>
+      <div
         style={{
             height: "100%",
                 flexGrow: 1,

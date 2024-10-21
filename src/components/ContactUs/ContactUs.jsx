@@ -13,7 +13,7 @@ export const ContactUs = () => {
   }, []);
 
   return (
-    <div className={"contact-container contact-container-" + theme}>
+    <div className={`contact-container contact-container-${theme}`}>
       <div id="contact-box">
         <div className="contact-section">
           <h3>Adres email:</h3>

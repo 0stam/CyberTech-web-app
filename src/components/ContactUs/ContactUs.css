@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(180deg, #828282 0%, #ffffff 3%);
 }
 
 .contact-container-orange {
@@ -14,9 +15,9 @@
     color: #696969;
 }
 
-.contact-container-green {
-    background: linear-gradient(180deg, #545454 0%, #000000 2%);
-    color: white;
+.contact-container-green{
+  background: #100c0c;
+  color: white;
 }
 
 .contact-container-green a {
@@ -31,6 +32,7 @@
 }
 .contact-section{
     margin-bottom: 30px;
+<<<<<<< HEAD
 }
 
 .home-background {
@@ -53,3 +55,6 @@
 a {
 
 }
+=======
+}
+>>>>>>> konrad/master
