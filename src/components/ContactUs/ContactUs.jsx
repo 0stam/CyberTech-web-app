@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLink } from "../Navbar/useLink";
 import "./ContactUs.css";
 import { useTheme } from "../Theme/useTheme";
-import { discord_url, facebook_url } from "../../EditableThings/Links/links";
+import { discord_url, facebook_url, youtube_url } from "../../EditableThings/Links/links";
 
 export const ContactUs = () => {
   const { setSelectedNavLink } = useLink();
@@ -35,6 +35,10 @@ export const ContactUs = () => {
         <div className="contact-section">
           <h3>Facebook:</h3>
           <a href={facebook_url}>{facebook_url}</a>
+        </div>
+        <div className="contact-section">
+          <h3>YouTube:</h3>
+          <a href={youtube_url}>{youtube_url}</a>
         </div>
       </div>
     </div>
