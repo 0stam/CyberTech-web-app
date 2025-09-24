@@ -20,13 +20,13 @@ export const HomePanelsComponent = () => {
         </div>
       </FadeInSection>
       <FadeInSection>
-        <div className="panel-container2">
-        <YoutubePanel />
-        </div>
+      <div className="panel-container2">
+      <Slider/>
+      </div>
       </FadeInSection>
       <FadeInSection>
         <div className="panel-container1">
-          <Slider/>
+        <YoutubePanel />
         </div>
       </FadeInSection>
       <FadeInSection>
