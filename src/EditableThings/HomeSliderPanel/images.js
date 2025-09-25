@@ -1,7 +1,7 @@
 import image1 from "./mp1.jpg";
 import image2 from "./mp2.jpg";
 import image3 from "./mp3.jpg";
-import image4 from "./mp3.jpg";
+import image4 from "./mp4.jpg";
 // IMPORTANT STUFF, don't place a lot of text
 // I also recommend images with high resolution that have height the same as width - it does not need to be a perfect square but with it it'll be more likely for a lot of text to fit
 const SlidesJSON = {
@@ -22,13 +22,13 @@ const SlidesJSON = {
       url: image3,
       title: "LLMy wizyjne",
       caption:
-        "Badamy zastosowanie LLMów w uzyskiwaniu informacji o zdjęciach. Dzięki współpracy z Wrocławskim Centrum Sieciowo-Superkomputerowym projekt pozwala nauczyć się pracy z superkomputerami i uruchamiania największych otwartych modeli językowych na świecie. Badamy m.in. wpływ fine-tuningu i łączenia LLMów z mniejszymi modelami.",
+        "Badamy zastosowanie LLMów w analizie obrazów. Dzięki współpracy z Wrocławskim Centrum Sieciowo-Superkomputerowym projekt pozwala nauczyć się pracy z superkomputerami i uruchamiania największych otwartych LLMów na świecie. Badamy m.in. wpływ fine-tuningu i łączenia LLMów z mniejszymi modelami.",
     },
     {
       url: image4,
       title: "Kurs edukacyjny",
       caption:
-        "Badamy zastosowanie LLMów w uzyskiwaniu informacji o zdjęciach. Dzięki współpracy z Wrocławskim Centrum Sieciowo-Superkomputerowym projekt pozwala nauczyć się pracy z superkomputerami i uruchamiania największych otwartych modeli językowych na świecie. Badamy m.in. wpływ fine-tuningu i łączenia LLMów z mniejszymi modelami.",
+        "Na początku każdego roku prowadzimy kurs dla nowych członków. Skupiamy się na praktycznym podejściu i zadaniach, które uczą samodzielnego rozwiązywania problemów – a to wszystko bez spiny, w luźnej atmosferze. Prowadzimy też kanał na YouTubie, na którym można znaleźć wstęp ma Machine Learning, a za niedługo pojawią się nagrania z kursowych wykładów.",
     },
   ],
 };
