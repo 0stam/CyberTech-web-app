@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <div className={`footer`}>
       <div className="science-club-div">
-        <div>CyberTech: Linked by Cybertech</div>
+        <div>CyberTech</div>
         Kontakt:{" "}
         <a href="mailto:cybertech-pwr@proton.me" target="_blank">
           cybertech-pwr@proton.me
