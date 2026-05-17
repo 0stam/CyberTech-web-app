@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useEffect } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home";
 import { Projects } from "./components/Projects/Projects";
@@ -10,6 +10,33 @@ import { ThemeChangingFooter } from "./components/Footer/ThemeChangingFooter";
 
 function App() {
   const location = useLocation();
+
+  // Change favicon based on browser theme (light/dark mode)
+  useEffect(() => {
+    const updateFavicon = () => {
+      const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const faviconHref = isDarkMode
+        ? "./src/assets/favicon-dark.svg"
+        : "./src/assets/favicon-light.svg";
+      
+      let favicon = document.querySelector("link[rel='icon']");
+      if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        favicon.type = "image/svg+xml";
+        document.head.appendChild(favicon);
+      }
+      favicon.href = faviconHref;
+    };
+
+    updateFavicon();
+
+    // Listen for browser theme changes
+    const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    darkModeQuery.addEventListener("change", updateFavicon);
+
+    return () => darkModeQuery.removeEventListener("change", updateFavicon);
+  }, []);
   return (
     <div className="whole-app">
       <ThemeProvider>
