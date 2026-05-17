@@ -13,7 +13,7 @@
 
 }
 .window-tab-green{
-    background-color: #00ff77;
+    background-color: #f85c2c;
 }
 .window-tab-orange{
     background-color: #f85c2c;
@@ -56,7 +56,7 @@
     transition: all 0.5s ease;
 }
 .text-tab-green{
-    color: #00ff77;
+    color: #f85c2c;
 }
 .text-tab-orange{
     color: #f85c2c;

@@ -60,7 +60,7 @@ export const Navbar = () => {
         width={58}
         uncheckedIcon={false}
         checkedIcon={false}
-        onColor="#00ff77"
+        onColor="#f85c2c"
         offColor="#f85c2c"
         />
         </div>

@@ -130,11 +130,7 @@ export const BackgroundAnimation = () => {
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
         ctx.lineTo(closestPoint.x, closestPoint.y);
-        ctx.strokeStyle = `${
-          theme === "green"
-            ? `rgba(0, 255, 119,${p.active})`
-            : `rgba(248, 92, 44,${p.active})`
-        }`;
+        ctx.strokeStyle = `rgba(248, 92, 44,${p.active})`;
         ctx.stroke();
       });
     }
@@ -148,11 +144,7 @@ export const BackgroundAnimation = () => {
         if (!this.active) return;
         ctx.beginPath();
         ctx.arc(this.pos.x, this.pos.y, this.radius, 0, 2 * Math.PI, false);
-        ctx.fillStyle = `${
-          theme === "green"
-            ? `rgba(0, 255, 119,${this.active})`
-            : `rgba(248, 92, 44,${this.active})`
-        }`;
+        ctx.fillStyle = `rgba(248, 92, 44,${this.active})`;
         ctx.fill();
       };
     }
