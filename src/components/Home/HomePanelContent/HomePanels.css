@@ -33,7 +33,8 @@ rect {
   background-image: url("./backgroundsvgorange.svg");
 }
 .home-container-green {
-  background-image: url("./backgroundsvg.svg");
+  /* Use the orange background for both themes to avoid leftover green stripes */
+  background-image: url("./backgroundsvgorange.svg?v=2");
 }
 
 .panel-container1{
@@ -83,7 +84,7 @@ rect {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(0, 255, 119, 1) 51%,
+      rgba(248, 92, 44, 1) 51%,
       rgba(255, 255, 255, 1) 100%
     );
   }
