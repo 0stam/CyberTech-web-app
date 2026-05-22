@@ -1,9 +1,9 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import "./Footer.css";
-import { discord_url, facebook_url } from "../../EditableThings/Links/links";
+import { discord_url, facebook_url, instagram_url } from "../../EditableThings/Links/links";
 
 export const Footer = () => {
   return (
@@ -18,6 +18,9 @@ export const Footer = () => {
           Social media:{" "}
           <a href={facebook_url} target="_blank">
             <FaFacebookSquare />
+          </a>{" "}
+          <a href={instagram_url} target="_blank">
+            <FaInstagramSquare />
           </a>{" "}
           <a href={discord_url} target="_blank">
             <FaDiscord />
