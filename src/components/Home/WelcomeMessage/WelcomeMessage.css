@@ -23,7 +23,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  position: relative;
+  z-index: 200;
 
 }
 .welcome-text {
@@ -47,6 +48,8 @@
   height: clamp(350px, 50vh, 800px);
 
   animation: levitate2 5s ease-in-out infinite;
+  position: relative;
+  z-index: 300;
 }
 @keyframes levitate1 {
   0%, 100% {

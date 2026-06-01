@@ -21,6 +21,7 @@ export const LogoTextNavbar = () => {
         viewBox="174.453 0 370.977 126.235"
         id="svg48"
         xmlns="http://www.w3.org/2000/svg"
+        fillRule="nonzero"
       >
         <defs id="defs52" />
         <path

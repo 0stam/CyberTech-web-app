@@ -1,4 +1,6 @@
-import { Routes, Route, useLocation, useEffect } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import darkFavicon from "./assets/cybertech_logo_shard.svg";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home";
 import { Projects } from "./components/Projects/Projects";
@@ -16,8 +18,8 @@ function App() {
     const updateFavicon = () => {
       const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
       const faviconHref = isDarkMode
-        ? "./src/assets/favicon-dark.svg"
-        : "./src/assets/favicon-light.svg";
+        ? darkFavicon
+        : "/vite.svg";
       
       let favicon = document.querySelector("link[rel='icon']");
       if (!favicon) {

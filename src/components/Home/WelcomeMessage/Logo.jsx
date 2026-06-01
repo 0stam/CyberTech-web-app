@@ -18,6 +18,7 @@ export const Logo = () => {
         version="1.1"
         viewBox="0 0 171.41032 134.09557"
         id="visual"
+        fillRule="nonzero"
       >
         <path
           fill={getFillColor("#ffffff", "#100c0c")}

@@ -83,7 +83,7 @@ export const Navbar = () => {
         ) : (
             ""
         )}
-        Home
+        Strona Główna 
         {selectedNavLink === "home" ? <LogoNavlink2 /> : ""}
         </NavLink>
         </li>
@@ -96,7 +96,7 @@ export const Navbar = () => {
             onClick={() => setSelectedNavLink("contact-us")}
           >
             {selectedNavLink === "contact-us" ? <LogoNavlink1 /> : ""}
-            Contact us
+            Kontakt
             {selectedNavLink === "contact-us" ? <LogoNavlink2 /> : ""}
           </NavLink>
         </li>

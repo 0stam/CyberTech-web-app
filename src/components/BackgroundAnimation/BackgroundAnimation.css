@@ -6,3 +6,13 @@
   overflow: hidden;
   transition: background-color 0.5s ease;
 }
+
+.large-header canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
