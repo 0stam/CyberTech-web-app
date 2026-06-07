@@ -1,5 +1,5 @@
 import { WindowTab } from "./WindowTab";
-import { memo, useState } from "react";
+import { memo, useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 import "./WindowPanel.css";
 
@@ -8,6 +8,15 @@ const WindowPanelComponent = ({ children, class_number, text}) => {
   // 5 - default, 6 - gold
   const MemoizedWindowTab = memo(WindowTab);
   const [isClosed, setIsClosed] = useState(false);
+
+  useEffect(() => {
+    if (isClosed) {
+      const timer = setTimeout(() => {
+        setIsClosed(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [isClosed]);
 
   return (
     <div

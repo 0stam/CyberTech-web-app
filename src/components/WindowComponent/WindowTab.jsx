@@ -14,17 +14,7 @@ export const WindowTab = ({ text, setIsClosed, class_number }) => {
   const setIsVisible = useVisibility();
   const { theme} = useTheme();
   const handleVisibility = () => {
-    if (setIsVisible) {
-      // It firstly checks for context (fade in section (useVisibility) - which is in homePage, but I do not want to use it here)
-      setIsVisible(false);
-    } else {
-      // If context is not available, fall back to setIsClosed, which is default close animation for windowPanel
-      // I could use only it but then there the nth child fade out wouldn't work
-      // TO DO: check if it's really impossible to do with only setIsClosed
-      console.warn('No provider available, executing fallback function - delete later in WindowTab');
-      setIsClosed(true);
-      //fallbackFunction();
-    }
+    setIsClosed(true);
   };
   return (// there is only a value for window-tab-5 and text-tab-5 in CSS, the rest is default
           // i wanted some Panels to have different look without creating dependencies, so I came up with simple number values

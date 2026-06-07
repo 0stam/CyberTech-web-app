@@ -14,5 +14,5 @@ export const LinkProvider = ({ children }) => {
 };
 
 LinkProvider.propTypes = {
-  children: PropTypes.node.isRequired, // Validate that children is a valid React node
+  children: PropTypes.node.isRequired
 };

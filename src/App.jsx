@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import darkFavicon from "./assets/cybertech_logo_shard.svg";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home";
 import { Projects } from "./components/Projects/Projects";
@@ -10,6 +12,33 @@ import { ThemeChangingFooter } from "./components/Footer/ThemeChangingFooter";
 
 function App() {
   const location = useLocation();
+
+  // Change favicon based on browser theme (light/dark mode)
+  useEffect(() => {
+    const updateFavicon = () => {
+      const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const faviconHref = isDarkMode
+        ? darkFavicon
+        : "/vite.svg";
+      
+      let favicon = document.querySelector("link[rel='icon']");
+      if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        favicon.type = "image/svg+xml";
+        document.head.appendChild(favicon);
+      }
+      favicon.href = faviconHref;
+    };
+
+    updateFavicon();
+
+    // Listen for browser theme changes
+    const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    darkModeQuery.addEventListener("change", updateFavicon);
+
+    return () => darkModeQuery.removeEventListener("change", updateFavicon);
+  }, []);
   return (
     <div className="whole-app">
       <ThemeProvider>

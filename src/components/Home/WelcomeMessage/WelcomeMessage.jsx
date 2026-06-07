@@ -5,11 +5,11 @@ export const WelcomeMessage = () => {
 
     return(
         <div className="welcome-container">
-            <div className="welcome-text">
-                <LogoText/>
-            </div>
             <div className="welcome-logo">
                 <Logo/>
+            </div>
+            <div className="welcome-text">
+                <LogoText/>
             </div>
         </div>
     )

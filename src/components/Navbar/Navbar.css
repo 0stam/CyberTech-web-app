@@ -55,7 +55,7 @@ nav, nav * {
     transition: background-color 0.5s ease;
 }
 .scroll-watcher-green {
-    background-color: #00ff77;
+    background-color: #f85c2c;
 }
 .scroll-watcher-orange {
     background-color: #f85c2c;
@@ -64,10 +64,9 @@ nav, nav * {
     height: 66px;
     display: flex;
     padding-top: 18px;
-    padding-left: 30px;
+    padding-left: 8px;
     outline: none;
     box-shadow: none;
-    /* ogarnac jak wysrodkowac a nie jakis padding */
     background-color: #00000000;
 }
 .react-switch-handle {
@@ -90,15 +89,35 @@ nav, nav * {
     height: 100%;
     min-width: 54px;
 }
+.svg-container-navbar {
+    width: auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+.svg-logo-navbar {
+    height: 58px;
+    width: auto;
+    margin-left: -28px;
+}
+.navbar-icon {
+    width: 46px;
+    height: auto;
+    margin-right: 0;
+    display: block;
+}
 .cybertech-title {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 8px;
     font-size: 25px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
     height: 100%;
-    width: 300px;
-    min-width: 200px;
+    width: auto;
+    min-width: 0;
 }
 
 nav ul {
@@ -136,7 +155,7 @@ nav ul li a {
 
 
 nav .ul-green li a:hover{
-    color: #00ff77;
+    color: #f85c2c;
 }
 nav .ul-orange li a:hover{
     color: #f85c2c;
@@ -192,7 +211,7 @@ nav .ul-orange li a:hover{
         left: 0;
     }
     nav .ul-green{
-        border-bottom: solid 10px #00ff77;
+        border-bottom: solid 10px #f85c2c;
     }
     nav .ul-orange{
         border-bottom: solid 10px #f85c2c;
