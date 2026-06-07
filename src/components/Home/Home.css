@@ -67,7 +67,7 @@ background: linear-gradient(180deg, #ffcbb6 0%, #ffffff 6%);
   }
   
   .home-background-green::before {
-    background-image: linear-gradient(180deg, #ffd1be 0%, #ffcbb6 100%);
+    background-image: linear-gradient(180deg, #ff758c 0%, #ffcbb6 100%);
   }
   
   .home-background:hover::before {

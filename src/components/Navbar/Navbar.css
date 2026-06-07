@@ -64,10 +64,9 @@ nav, nav * {
     height: 66px;
     display: flex;
     padding-top: 18px;
-    padding-left: 30px;
+    padding-left: 8px;
     outline: none;
     box-shadow: none;
-    /* ogarnac jak wysrodkowac a nie jakis padding */
     background-color: #00000000;
 }
 .react-switch-handle {
@@ -97,19 +96,21 @@ nav, nav * {
     align-items: center;
 }
 .svg-logo-navbar {
-    width: 140px;
-    height: auto;
+    height: 58px;
+    width: auto;
+    margin-left: -28px;
 }
 .navbar-icon {
-    width: 32px;
+    width: 46px;
     height: auto;
-    margin-right: 2px;
+    margin-right: 0;
     display: block;
 }
 .cybertech-title {
     display: flex;
     align-items: center;
-    padding-left: 12px;
+    padding-left: 28px;
+    padding-right: 8px;
     font-size: 25px;
     text-decoration: none;
     color: rgb(0, 0, 0);

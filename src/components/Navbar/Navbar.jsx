@@ -60,6 +60,8 @@ export const Navbar = () => {
         width={58}
         uncheckedIcon={false}
         checkedIcon={false}
+        checkedHandleIcon={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', fontSize: '14px' }}>🌙</div>}
+        uncheckedHandleIcon={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', fontSize: '14px' }}>☀️</div>}
         onColor="#f85c2c"
         offColor="#f85c2c"
         />

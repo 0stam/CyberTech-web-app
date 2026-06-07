@@ -18,7 +18,7 @@ export const LogoTextNavbar = () => {
         width="545.42969"
         height="134.09557"
         version="1.1"
-        viewBox="174.453 0 370.977 126.235"
+        viewBox="186 0 331 126.235"
         id="svg48"
         xmlns="http://www.w3.org/2000/svg"
         fillRule="nonzero"
